@@ -6,7 +6,6 @@ C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\HarfBuzzSharp.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\SkiaSharp.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\SkiaSharp.HarfBuzz.dll
-C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\SkiaSharp.Views.Desktop.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\Topten.RichTextKit.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\runtimes\osx\native\libHarfBuzzSharp.dylib
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\runtimes\win-arm64\native\libHarfBuzzSharp.dll
@@ -29,3 +28,7 @@ C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF Resume Creator.pdb
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF Resume Creator.genruntimeconfig.cache
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\ref\PDF Resume Creator.dll
+C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\OpenTK.dll
+C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\OpenTK.GLControl.dll
+C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\SkiaSharp.Views.WindowsForms.dll

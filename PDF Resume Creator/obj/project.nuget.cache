@@ -1,17 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "jlOtPgvetuf+M+XnaN5Tv6Je74H89PLDUN7nJ7boFXakzOJa8TTdg3sAB1rhdG9u63D+BJClcaAVnbsC/xnCcg==",
+  "dgSpecHash": "sPt7czVPsCvygUPBZh0NGfMZ0vgGdil5GxBPCn3AxZwei3r1PanzHafOp10cpxwCJeh5fdB1cGcy6puJC9Ab0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Iaori\\source\\repos\\PDF Resume Creator\\PDF Resume Creator\\PDF Resume Creator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iaori\\.nuget\\packages\\harfbuzzsharp\\2.8.2-preview.209\\harfbuzzsharp.2.8.2-preview.209.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\2.8.2-preview.209\\harfbuzzsharp.nativeassets.macos.2.8.2-preview.209.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\2.8.2-preview.209\\harfbuzzsharp.nativeassets.win32.2.8.2-preview.209.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\opentk.glcontrol\\3.1.0\\opentk.glcontrol.3.1.0.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp\\2.88.1-preview.79\\skiasharp.2.88.1-preview.79.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.0-preview.209\\skiasharp.harfbuzz.2.88.0-preview.209.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.1-preview.79\\skiasharp.nativeassets.macos.2.88.1-preview.79.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.1-preview.79\\skiasharp.nativeassets.win32.2.88.1-preview.79.nupkg.sha512",
-    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.views\\2.88.1-preview.79\\skiasharp.views.2.88.1-preview.79.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.views.desktop.common\\2.88.1-preview.79\\skiasharp.views.desktop.common.2.88.1-preview.79.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.views.windowsforms\\2.88.1-preview.79\\skiasharp.views.windowsforms.2.88.1-preview.79.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Iaori\\.nuget\\packages\\topten.richtextkit\\0.4.162-preview\\topten.richtextkit.0.4.162-preview.nupkg.sha512"
   ],
@@ -20,8 +26,18 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'SkiaSharp.Views 2.88.1-preview.79' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SkiaSharp.Views",
+      "message": "Package 'OpenTK 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenTK.GLControl 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenTK.GLControl",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

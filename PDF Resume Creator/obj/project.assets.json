@@ -54,6 +54,54 @@
           }
         }
       },
+      "Microsoft.NETCore.Platforms/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "OpenTK/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/OpenTK.dll": {}
+        },
+        "runtime": {
+          "lib/net20/OpenTK.dll": {}
+        }
+      },
+      "OpenTK.GLControl/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "3.1.0"
+        },
+        "compile": {
+          "lib/net20/OpenTK.GLControl.dll": {}
+        },
+        "runtime": {
+          "lib/net20/OpenTK.GLControl.dll": {}
+        }
+      },
       "SkiaSharp/2.88.1-preview.79": {
         "type": "package",
         "dependencies": {
@@ -118,13 +166,55 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.1-preview.79": {
+      "SkiaSharp.Views.Desktop.Common/2.88.1-preview.79": {
         "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.1-preview.79",
+          "System.Drawing.Common": "4.5.1"
+        },
         "compile": {
-          "lib/net462/SkiaSharp.Views.Desktop.dll": {}
+          "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll": {}
         },
         "runtime": {
-          "lib/net462/SkiaSharp.Views.Desktop.dll": {}
+          "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll": {}
+        }
+      },
+      "SkiaSharp.Views.WindowsForms/2.88.1-preview.79": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "3.1.0",
+          "OpenTK.GLControl": "3.1.0",
+          "SkiaSharp": "2.88.1-preview.79",
+          "SkiaSharp.Views.Desktop.Common": "2.88.1-preview.79"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Memory/4.5.3": {
@@ -255,6 +345,72 @@
         "runtimes/win-arm64/native/libHarfBuzzSharp.dll",
         "runtimes/win-x64/native/libHarfBuzzSharp.dll",
         "runtimes/win-x86/native/libHarfBuzzSharp.dll"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "sha512": "LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "OpenTK/3.1.0": {
+      "sha512": "xoP5kb81lRSY5RzbntaFA9yXK+aGF5SLShhns55MyZtxtNafIxRH5KvRTFss/N653brTzE+AfepjKsbMexYlBQ==",
+      "type": "package",
+      "path": "opentk/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/OpenTK.dll.config",
+        "lib/net20/OpenTK.dll",
+        "lib/net20/OpenTK.pdb",
+        "lib/net20/OpenTK.xml",
+        "opentk.3.1.0.nupkg.sha512",
+        "opentk.nuspec"
+      ]
+    },
+    "OpenTK.GLControl/3.1.0": {
+      "sha512": "BjDzF+MhJd2LaZYzkXmgkzzXgHAko/Iur4rGy6+DPdZA1Jcc0X6jXZ6QsUsjlLRNzgevO7uAj2h1TqX7sguaYg==",
+      "type": "package",
+      "path": "opentk.glcontrol/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/OpenTK.GLControl.dll",
+        "lib/net20/OpenTK.GLControl.pdb",
+        "lib/net20/OpenTK.GLControl.xml",
+        "opentk.glcontrol.3.1.0.nupkg.sha512",
+        "opentk.glcontrol.nuspec"
       ]
     },
     "SkiaSharp/2.88.1-preview.79": {
@@ -403,62 +559,76 @@
         "skiasharp.nativeassets.win32.nuspec"
       ]
     },
-    "SkiaSharp.Views/2.88.1-preview.79": {
-      "sha512": "pcLx7WMyj4c1BGLLd7ieJHvQ+LXThSPLTRXx56dTaEVTIqlvIolpNaoPGXG4rSMUQmHI7383o9lvBWrI7XZ27w==",
+    "SkiaSharp.Views.Desktop.Common/2.88.1-preview.79": {
+      "sha512": "+1lro4pdWlnIBF6qvbeLee4bJUIXGsl3wulRnqbTACpg11yW87bKHSOn7L8737Pwcdh320ySsqagPmCW5C9YBg==",
       "type": "package",
-      "path": "skiasharp.views/2.88.1-preview.79",
+      "path": "skiasharp.views.desktop.common/2.88.1-preview.79",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
-        "lib/monoandroid1.0/SkiaSharp.Views.Android.dll",
-        "lib/monoandroid1.0/SkiaSharp.Views.Android.pdb",
-        "lib/monoandroid1.0/SkiaSharp.Views.Android.xml",
-        "lib/net462/SkiaSharp.Views.Desktop.dll",
-        "lib/net462/SkiaSharp.Views.Desktop.pdb",
-        "lib/net462/SkiaSharp.Views.Desktop.xml",
-        "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll",
-        "lib/net6.0-android30.0/SkiaSharp.Views.Android.pdb",
-        "lib/net6.0-android30.0/SkiaSharp.Views.Android.xml",
-        "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll",
-        "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.pdb",
-        "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.xml",
-        "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll",
-        "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.pdb",
-        "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.xml",
-        "lib/net6.0-macos10.15/SkiaSharp.Views.Mac.dll",
-        "lib/net6.0-macos10.15/SkiaSharp.Views.Mac.pdb",
-        "lib/net6.0-macos10.15/SkiaSharp.Views.Mac.xml",
-        "lib/net6.0-tizen7.0/SkiaSharp.Views.Tizen.dll",
-        "lib/net6.0-tizen7.0/SkiaSharp.Views.Tizen.pdb",
-        "lib/net6.0-tizen7.0/SkiaSharp.Views.Tizen.xml",
-        "lib/net6.0-tvos13.4/SkiaSharp.Views.tvOS.dll",
-        "lib/net6.0-tvos13.4/SkiaSharp.Views.tvOS.pdb",
-        "lib/net6.0-tvos13.4/SkiaSharp.Views.tvOS.xml",
-        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
-        "lib/tizen40/SkiaSharp.Views.Tizen.pdb",
-        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
-        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
-        "lib/uap10.0/SkiaSharp.Views.UWP.pdb",
-        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
-        "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll",
-        "lib/xamarinios1.0/SkiaSharp.Views.iOS.pdb",
-        "lib/xamarinios1.0/SkiaSharp.Views.iOS.xml",
-        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.dll",
-        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.pdb",
-        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.xml",
-        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.dll",
-        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.pdb",
-        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.xml",
-        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.dll",
-        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.pdb",
-        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.xml",
-        "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "runtimes/win10-arm64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "skiasharp.views.2.88.1-preview.79.nupkg.sha512",
-        "skiasharp.views.nuspec"
+        "lib/net462/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/net462/SkiaSharp.Views.Desktop.Common.pdb",
+        "lib/net462/SkiaSharp.Views.Desktop.Common.xml",
+        "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.xml",
+        "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.pdb",
+        "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.xml",
+        "skiasharp.views.desktop.common.2.88.1-preview.79.nupkg.sha512",
+        "skiasharp.views.desktop.common.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.WindowsForms/2.88.1-preview.79": {
+      "sha512": "z09tP1t50BVmB/Q+muGoZwWvVWA1RZg/YCvnSE8fY7oy3KGel1ZjHbgUHfjQH/deCFlFBgOkHrlxOtgERX5lOQ==",
+      "type": "package",
+      "path": "skiasharp.views.windowsforms/2.88.1-preview.79",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net462/SkiaSharp.Views.WindowsForms.dll",
+        "lib/net462/SkiaSharp.Views.WindowsForms.pdb",
+        "lib/net462/SkiaSharp.Views.WindowsForms.xml",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.xml",
+        "skiasharp.views.windowsforms.2.88.1-preview.79.nupkg.sha512",
+        "skiasharp.views.windowsforms.nuspec"
+      ]
+    },
+    "System.Drawing.Common/4.5.1": {
+      "sha512": "GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "type": "package",
+      "path": "system.drawing.common/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "system.drawing.common.4.5.1.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Memory/4.5.3": {
@@ -510,7 +680,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "SkiaSharp >= 2.88.1-preview.79",
-      "SkiaSharp.Views >= 2.88.1-preview.79",
+      "SkiaSharp.Views.WindowsForms >= 2.88.1-preview.79",
       "Topten.RichTextKit >= 0.4.162-preview"
     ]
   },
@@ -562,7 +732,7 @@
             "target": "Package",
             "version": "[2.88.1-preview.79, )"
           },
-          "SkiaSharp.Views": {
+          "SkiaSharp.Views.WindowsForms": {
             "target": "Package",
             "version": "[2.88.1-preview.79, )"
           },
@@ -598,8 +768,18 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'SkiaSharp.Views 2.88.1-preview.79' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SkiaSharp.Views",
+      "message": "Package 'OpenTK 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenTK.GLControl 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenTK.GLControl",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

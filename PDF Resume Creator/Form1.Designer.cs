@@ -1,4 +1,6 @@
-﻿namespace PDF_Resume_Creator
+﻿
+
+namespace PDF_Resume_Creator
 {
     partial class Form1
     {
@@ -29,22 +31,46 @@
         private void InitializeComponent()
         {
             this.btnFP = new System.Windows.Forms.Button();
+            this.skControl1 = new SkiaSharp.Views.Desktop.SKControl();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFP
             // 
-            this.btnFP.Location = new System.Drawing.Point(125, 180);
+            this.btnFP.Location = new System.Drawing.Point(109, 109);
             this.btnFP.Name = "btnFP";
             this.btnFP.Size = new System.Drawing.Size(86, 22);
             this.btnFP.TabIndex = 0;
             this.btnFP.Text = "Open File";
             this.btnFP.UseVisualStyleBackColor = true;
+            this.btnFP.Click += new System.EventHandler(this.btnFP_Click);
+            // 
+            // skControl1
+            // 
+            this.skControl1.Location = new System.Drawing.Point(356, 38);
+            this.skControl1.Name = "skControl1";
+            this.skControl1.Size = new System.Drawing.Size(255, 330);
+            this.skControl1.TabIndex = 1;
+            this.skControl1.Text = "skControl1";
+            this.skControl1.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl1_PaintSurface);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(109, 165);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(86, 23);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save File";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 420);
+            this.ClientSize = new System.Drawing.Size(648, 420);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.skControl1);
             this.Controls.Add(this.btnFP);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
@@ -56,5 +82,7 @@
         #endregion
 
         private Button btnFP;
+        private SkiaSharp.Views.Desktop.SKControl skControl1;
+        private Button btnSave;
     }
 }

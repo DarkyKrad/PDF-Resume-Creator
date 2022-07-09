@@ -48,7 +48,7 @@
               "target": "Package",
               "version": "[2.88.1-preview.79, )"
             },
-            "SkiaSharp.Views": {
+            "SkiaSharp.Views.WindowsForms": {
               "target": "Package",
               "version": "[2.88.1-preview.79, )"
             },
