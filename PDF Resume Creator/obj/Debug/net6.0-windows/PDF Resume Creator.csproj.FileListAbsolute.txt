@@ -16,7 +16,6 @@ C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF Resume Creator.csproj.AssemblyReference.cache
-C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF_Resume_Creator.Form1.resources
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF Resume Creator.csproj.GenerateResource.cache
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF Resume Creator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF Resume Creator.AssemblyInfoInputs.cache
@@ -32,3 +31,4 @@ C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\OpenTK.GLControl.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
 C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\SkiaSharp.Views.WindowsForms.dll
+C:\Users\Iaori\source\repos\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF_Resume_Creator.PDFResumeConverter.resources

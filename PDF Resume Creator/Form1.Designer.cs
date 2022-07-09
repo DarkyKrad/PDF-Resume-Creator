@@ -2,7 +2,7 @@
 
 namespace PDF_Resume_Creator
 {
-    partial class Form1
+    partial class PDFResumeConverter
     {
         /// <summary>
         ///  Required designer variable.
@@ -37,7 +37,7 @@ namespace PDF_Resume_Creator
             // 
             // btnFP
             // 
-            this.btnFP.Location = new System.Drawing.Point(109, 109);
+            this.btnFP.Location = new System.Drawing.Point(109, 184);
             this.btnFP.Name = "btnFP";
             this.btnFP.Size = new System.Drawing.Size(86, 22);
             this.btnFP.TabIndex = 0;
@@ -47,16 +47,17 @@ namespace PDF_Resume_Creator
             // 
             // skControl1
             // 
-            this.skControl1.Location = new System.Drawing.Point(356, 38);
+            this.skControl1.BackColor = System.Drawing.Color.White;
+            this.skControl1.Location = new System.Drawing.Point(356, 12);
             this.skControl1.Name = "skControl1";
-            this.skControl1.Size = new System.Drawing.Size(255, 330);
+            this.skControl1.Size = new System.Drawing.Size(434, 625);
             this.skControl1.TabIndex = 1;
             this.skControl1.Text = "skControl1";
             this.skControl1.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl1_PaintSurface);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(109, 165);
+            this.btnSave.Location = new System.Drawing.Point(109, 362);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 23);
             this.btnSave.TabIndex = 2;
@@ -64,16 +65,19 @@ namespace PDF_Resume_Creator
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // Form1
+            // PDFResumeConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 420);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(802, 660);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.skControl1);
             this.Controls.Add(this.btnFP);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "PDFResumeConverter";
             this.Text = "Form1";
             this.ResumeLayout(false);
 

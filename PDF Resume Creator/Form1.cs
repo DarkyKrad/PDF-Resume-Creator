@@ -3,11 +3,14 @@ using System.Text.Json;
 using System.Diagnostics;
 namespace PDF_Resume_Creator
 {
-    public partial class Form1 : Form
+    public partial class PDFResumeConverter : Form
     {
         private string filepath = "";
         private Resume_Data resumedata;
-        public Form1()
+        private List<SKPicture>? pages;
+        private ResumeRenderer renderer = new();
+
+        public PDFResumeConverter()
         {
 
             InitializeComponent();
@@ -29,7 +32,8 @@ namespace PDF_Resume_Creator
                     try
                     {
                      resumedata = JsonSerializer.Deserialize<Resume_Data>(fileStream);
-                        Debug.WriteLine(resumedata.ToString());
+                        pages = renderer.RenderResume(resumedata);
+                        skControl1.Invalidate();
                     }
                    catch (JsonException ex)
                     {
@@ -42,12 +46,40 @@ namespace PDF_Resume_Creator
 
         private void skControl1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
         {
-
+            if (pages is not null)
+            {
+                var firstpage = pages.First();
+                var canvasSize = skControl1.CanvasSize;
+                var scaleMatrix = SKMatrix.CreateScale(canvasSize.Width / (8.5F * 72), canvasSize.Height / (11.5F * 72));
+                e.Surface.Canvas.DrawRect(0, 0, canvasSize.Width, canvasSize.Height, new SKPaint { Color = new(255, 255, 255) });
+                e.Surface.Canvas.DrawPicture(firstpage, ref scaleMatrix, new SKPaint { IsAntialias = true });
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (pages is not null)
+            {
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                {
+                    saveFileDialog.Filter = "PDF documents (*.pdf)|*.pdf|All files (*.*)|*.*";
+                    saveFileDialog.FilterIndex = 1;
+                    saveFileDialog.RestoreDirectory = true;
 
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        var filename = saveFileDialog.FileName;
+                        using (var pdfDocument = SKDocument.CreatePdf(filename))
+                        {
+                            var pageCanvas = pdfDocument.BeginPage(8.5F * 72, 11F * 72);
+                            var page = pages.First();
+                            pageCanvas.DrawPicture(page);
+                            pdfDocument.EndPage();
+                            pdfDocument.Close();
+                        }
+                    }
+                }
+            }
         }
     }
 }
