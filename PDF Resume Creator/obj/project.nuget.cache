@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "jlOtPgvetuf+M+XnaN5Tv6Je74H89PLDUN7nJ7boFXakzOJa8TTdg3sAB1rhdG9u63D+BJClcaAVnbsC/xnCcg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Iaori\\source\\repos\\PDF Resume Creator\\PDF Resume Creator\\PDF Resume Creator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Iaori\\.nuget\\packages\\harfbuzzsharp\\2.8.2-preview.209\\harfbuzzsharp.2.8.2-preview.209.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\2.8.2-preview.209\\harfbuzzsharp.nativeassets.macos.2.8.2-preview.209.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\2.8.2-preview.209\\harfbuzzsharp.nativeassets.win32.2.8.2-preview.209.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp\\2.88.1-preview.79\\skiasharp.2.88.1-preview.79.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.0-preview.209\\skiasharp.harfbuzz.2.88.0-preview.209.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.1-preview.79\\skiasharp.nativeassets.macos.2.88.1-preview.79.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.1-preview.79\\skiasharp.nativeassets.win32.2.88.1-preview.79.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\skiasharp.views\\2.88.1-preview.79\\skiasharp.views.2.88.1-preview.79.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Iaori\\.nuget\\packages\\topten.richtextkit\\0.4.162-preview\\topten.richtextkit.0.4.162-preview.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SkiaSharp.Views 2.88.1-preview.79' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SkiaSharp.Views",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
